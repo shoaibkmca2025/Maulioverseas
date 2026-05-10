@@ -7,7 +7,7 @@ const courses = [
   {
     id: '3-month',
     duration: '3 Months',
-    title: 'Fast-Track Hospitality Programme',
+    title: 'Fast-Track Hotel Management Programme',
     subtitle: 'Food & Beverage Service',
     badge: 'Fast Track',
     description: 'Intensive training designed for quick entry into Dubai\'s luxury hospitality sector. Master food & beverage service, guest relations, and hotel operations in 90 days.',
@@ -23,7 +23,7 @@ const courses = [
     id: '6-month',
     duration: '6 Months',
     title: 'Advanced Hotel Management',
-    subtitle: 'Comprehensive Hospitality Training',
+    subtitle: 'Comprehensive Hotel Management Training',
     badge: 'Most Popular',
     description: 'Comprehensive programme covering all facets of hotel management — from housekeeping and front office to F&B and leadership. Preferred by top Dubai recruiters.',
     fee: '₹75,000',
@@ -64,7 +64,7 @@ export default function Courses() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
-              Two world-class hospitality programmes designed for the Indian student — built for international careers.
+              Two world-class hotel management programmes designed for the Indian student — built for international careers.
             </p>
           </Reveal>
         </div>

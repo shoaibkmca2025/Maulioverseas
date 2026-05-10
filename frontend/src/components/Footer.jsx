@@ -8,7 +8,7 @@ const YtIcon = () => <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current"><
 
 const footerLinks = [
   { heading: 'Programmes', links: [
-    { label: '3-Month Hospitality', path: '/courses/3-month' },
+    { label: '3-Month Hotel Management', path: '/courses/3-month' },
     { label: '6-Month Advanced', path: '/courses/6-month' },
     { label: 'Dubai Land Jobs', path: '/placements' },
     { label: 'Cruise Ship Jobs', path: '/placements' },
@@ -62,9 +62,9 @@ export default function Footer() {
                 ))}
               </div>
               <div className="flex flex-col gap-3 text-sm text-white/50">
-                <a href="tel:+919876543210" className="flex items-center gap-2.5 hover:text-white transition-colors group">
+                <a href="tel:+918793364860" className="flex items-center gap-2.5 hover:text-white transition-colors group">
                   <Phone size={14} className="text-primary group-hover:scale-110 transition-transform flex-shrink-0" />
-                  +91 98765 43210
+                  +91 87933 64860
                 </a>
                 <a href="mailto:info@maulicollege.com" className="flex items-center gap-2.5 hover:text-white transition-colors group">
                   <Mail size={14} className="text-primary group-hover:scale-110 transition-transform flex-shrink-0" />

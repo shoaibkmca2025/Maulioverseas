@@ -232,7 +232,7 @@ export default function Course6Month() {
       <section className="py-20 bg-gradient-red relative overflow-hidden">
         <div className="relative container-pad text-center">
           <Reveal>
-            <h2 className="heading-lg text-white mb-4">Become a Hospitality Leader</h2>
+            <h2 className="heading-lg text-white mb-4">Become a Hotel Management Leader</h2>
             <p className="text-white/80 mb-8 max-w-lg mx-auto">Join our next batch and start your international career journey. Seats are limited.</p>
             <button onClick={openAdmissionForm}
               className="bg-white text-primary font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-widest hover:bg-off-white hover:-translate-y-1 transition-all duration-300 shadow-xl"

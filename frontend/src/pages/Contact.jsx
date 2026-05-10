@@ -18,7 +18,7 @@ const inputClass = (err) =>
   `w-full bg-gray-50 border rounded-xl px-4 py-3 text-sm text-charcoal placeholder-gray-400 outline-none transition-all duration-200 focus:bg-white ${err ? 'border-red-400 focus:border-red-500' : 'border-gray-200 focus:border-primary'}`;
 
 const contactInfo = [
-  { icon: Phone, label: 'Phone', value: '+91 98765 43210', href: 'tel:+919876543210' },
+  { icon: Phone, label: 'Phone', value: '+91 87933 64860', href: 'tel:+918793364860' },
   { icon: Mail, label: 'Email', value: 'info@maulicollege.com', href: 'mailto:info@maulicollege.com' },
   { icon: MapPin, label: 'Address', value: 'Chandgad, Kolhapur District, Maharashtra – 416509', href: null },
   { icon: Clock, label: 'Office Hours', value: 'Mon–Sat: 9:00 AM – 6:00 PM', href: null },
@@ -127,7 +127,7 @@ export default function Contact() {
                   <h3 className="font-bold text-lg mb-2">Prefer WhatsApp?</h3>
                   <p className="text-white/75 text-sm mb-4">Chat with our admissions team directly — usually responds in minutes.</p>
                   <a
-                    href={`https://wa.me/919876543210?text=${encodeURIComponent("Hello! I'm interested in Mauli College's hospitality courses. Please share more details.")}`}
+                    href={`https://wa.me/918793364860?text=${encodeURIComponent("Hello! I'm interested in Mauli College's hospitality courses. Please share more details.")}`}
                     target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white text-primary font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-off-white transition-colors"
                   >

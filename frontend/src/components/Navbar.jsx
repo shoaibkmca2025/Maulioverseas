@@ -142,11 +142,11 @@ export default function Navbar() {
 
           {/* Desktop right actions */}
           <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
-            <a href="tel:+919876543210"
+            <a href="tel:+918793364860"
               className="hidden xl:flex items-center gap-1.5 text-[0.72rem] font-semibold text-navy/70 hover:text-primary transition-colors whitespace-nowrap"
             >
               <Phone size={12} className="text-primary flex-shrink-0" />
-              +91 98765 43210
+              +91 87933 64860
             </a>
             <div className="hidden xl:block w-px h-4 bg-gray-200" />
             <div className="flex gap-1">
@@ -219,8 +219,8 @@ export default function Navbar() {
                   </motion.div>
                 ))}
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="pt-3 pb-1 space-y-2.5 border-t border-gray-100 mt-2">
-                  <a href="tel:+919876543210" className="flex items-center gap-2 px-4 py-3 text-sm font-semibold text-navy bg-cream rounded-xl">
-                    <Phone size={15} className="text-primary flex-shrink-0" /> +91 98765 43210
+                  <a href="tel:+918793364860" className="flex items-center gap-2 px-4 py-3 text-sm font-semibold text-navy bg-cream rounded-xl">
+                    <Phone size={15} className="text-primary flex-shrink-0" /> +91 87933 64860
                   </a>
                   <Link to="/contact" className="block w-full text-center bg-navy text-white font-bold py-3.5 rounded-xl text-sm uppercase tracking-wide hover:bg-navy-light transition-colors">
                     Apply Now — Free

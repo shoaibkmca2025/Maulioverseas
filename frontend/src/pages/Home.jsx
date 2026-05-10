@@ -486,8 +486,8 @@ export default function Home() {
                 tagBg: 'bg-primary',
                 duration: '3 Months',
                 emoji: '🏨',
-                title: '3-Month Hospitality Fundamentals',
-                desc: 'Intensive course covering all hospitality essentials. Perfect for school leavers seeking immediate Dubai placement.',
+                title: '3-Month Hotel Management Fundamentals',
+                desc: 'Intensive course covering all hotel management essentials. Perfect for school leavers seeking immediate Dubai placement.',
                 points: ['Housekeeping Operations', 'F&B Service & Etiquette', 'Kitchen Hygiene & HACCP', 'Front Office Orientation', 'English Communication'],
                 placement: 'Dubai 5-Star Hotel',
                 salary: 'AED 1,200–1,800/mo',
@@ -499,9 +499,9 @@ export default function Home() {
                 tagBg: 'bg-amber-500',
                 duration: '6 Months',
                 emoji: '🚢',
-                title: '6-Month Advanced Hospitality Training',
+                title: '6-Month Advanced Hotel Management Training',
                 desc: '4-phase programme with department specialization. Opens doors to cruise ships, GCC countries, and senior roles.',
-                points: ['Hospitality Foundations', 'Department Specialization', 'Live Practical Training', 'Full Placement Preparation', 'Cruise Ship Eligibility'],
+                points: ['Hotel Management Foundations', 'Department Specialization', 'Live Practical Training', 'Full Placement Preparation', 'Cruise Ship Eligibility'],
                 placement: 'Dubai / GCC / Cruise',
                 salary: 'AED 1,500–2,500/mo',
                 path: '/courses/6-month',
@@ -654,7 +654,7 @@ export default function Home() {
                   <div className="space-y-7">
                     {[
                       { n: '01', icon: '📋', t: 'Admission', d: 'Submit enquiry → Counselor call → Admission & enrollment' },
-                      { n: '02', icon: '🎓', t: 'Training', d: '3 or 6-month intensive on-campus hospitality training' },
+                      { n: '02', icon: '🎓', t: 'Training', d: '3 or 6-month intensive on-campus hotel management training' },
                       { n: '03', icon: '🏆', t: 'Certification', d: 'Receive MCHM & HACCP certificates + visa preparation' },
                       { n: '04', icon: '✈️', t: 'Dubai Placement', d: 'Interview coaching → Visa → Airport to 5-star hotel' },
                     ].map(({ n, icon, t, d }, i) => (
@@ -802,7 +802,7 @@ export default function Home() {
               transition={{ duration: 2.5, repeat: Infinity }}
               className="inline-block text-5xl mb-6">✈️</motion.span>
             <h2 className="heading-lg text-white mb-5">
-              Ready to Start Your<br />International Hospitality Career?
+              Ready to Start Your<br />International Hotel Management Career?
             </h2>
             <p className="text-white/75 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
               Join 100+ students from Kolhapur, Sangli, Belgaum who've already secured international placements through Mauli College.

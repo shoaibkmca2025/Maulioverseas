@@ -5,7 +5,7 @@ import Reveal, { StaggerReveal, StaggerItem } from '../components/Reveal';
 import { openAdmissionForm } from '../components/PopupForm';
 
 const curriculum = [
-  { week: 'Week 1–2', title: 'Hospitality Fundamentals', topics: ['Introduction to Hotel Industry', 'Types of Hotels & Resorts', 'Guest Lifecycle Journey', 'Professional Communication'] },
+  { week: 'Week 1–2', title: 'Hotel Management Fundamentals', topics: ['Introduction to Hotel Industry', 'Types of Hotels & Resorts', 'Guest Lifecycle Journey', 'Professional Communication'] },
   { week: 'Week 3–5', title: 'F&B Service Mastery', topics: ['Restaurant Service Styles', 'Table Setting & Protocols', 'Menu Knowledge & Upselling', 'Order Taking & POS Systems'] },
   { week: 'Week 6–8', title: 'Bar & Beverage Operations', topics: ['Beverage Knowledge', 'Cocktail Preparation Basics', 'Wine Service Protocols', 'Bar Hygiene & Safety'] },
   { week: 'Week 9–10', title: 'Guest Relations & Culture', topics: ['Dubai Culture & Etiquette', 'Complaint Handling', 'VIP Guest Management', 'Cross-Cultural Communication'] },
@@ -41,7 +41,7 @@ export default function Course3Month() {
             </Reveal>
             <Reveal delay={0.08}>
               <h1 className="heading-xl text-white mb-4">
-                Fast-Track Hospitality<br /><span className="text-gradient-red">Programme</span>
+                Fast-Track Hotel Management<br /><span className="text-gradient-red">Programme</span>
               </h1>
             </Reveal>
             <Reveal delay={0.16}>
