@@ -15,7 +15,7 @@ const footerLinks = [
   ]},
   { heading: 'Explore', links: [
     { label: 'Gallery', path: '/gallery' },
-    { label: 'Tasty-monials', path: '/tastymonials' },
+    { label: 'Testimonials', path: '/tastymonials' },
     { label: 'Career Guide', path: '/career-guide' },
     { label: 'Contact Us', path: '/contact' },
   ]},

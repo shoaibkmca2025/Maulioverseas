@@ -19,7 +19,7 @@ const navLinks = [
   { label: 'Placements', path: '/placements' },
   { label: 'Gallery', path: '/gallery' },
   { label: 'Career Guide', path: '/career-guide' },
-  { label: 'Tastymonials', path: '/tastymonials' },
+  { label: 'Testimonials', path: '/tastymonials' },
   { label: 'Contact', path: '/contact' },
 ];
 
