@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Mukta:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #0d1b2e;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  #root { min-height: 100vh; }
+  img { display: block; max-width: 100%; }
+  button, a { cursor: pointer; }
+}
+
+@layer utilities {
+  .text-gradient-red {
+    background: linear-gradient(135deg, #C0000C 0%, #8B0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glass {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .glass-dark {
+    background: rgba(13,27,46,0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .card-lift {
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.4s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 32px 64px rgba(13,27,46,0.18);
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl
+           transition-all duration-300 hover:shadow-xl hover:shadow-primary/30
+           hover:-translate-y-0.5 active:translate-y-0 active:shadow-none;
+  }
+  .btn-outline {
+    @apply border-2 border-white/70 hover:border-white text-white font-semibold
+           rounded-xl transition-all duration-300 hover:bg-white/10;
+  }
+  .section-pad { @apply py-20 lg:py-28; }
+  .container-pad { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .heading-xl { @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight; }
+  .heading-lg { @apply text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.15] tracking-tight; }
+  .heading-md { @apply text-2xl sm:text-3xl font-bold leading-tight; }
+  .body-lg { @apply text-base sm:text-lg leading-relaxed; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f8f8f8; }
+::-webkit-scrollbar-thumb { background: #C0000C; border-radius: 10px; }
+
+/* Marquee */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee { animation: marquee-left 35s linear infinite; display: flex; width: max-content; will-change: transform; }
+.marquee:hover { animation-play-state: paused; }
+
+/* WhatsApp pulse */
+@keyframes wa-pulse {
+  0%   { transform: scale(1); opacity: 0.7; }
+  70%  { transform: scale(1.8); opacity: 0; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.wa-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #25D366;
+  animation: wa-pulse 2s ease-out infinite;
+  z-index: -1;
+}
+
+/* Reveal animations */
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(50px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes reveal-left {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes reveal-right {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Counter animation */
+@keyframes count-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Line shimmer for loading skeleton effect */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Progress bar animation */
+@keyframes progress-fill { from { width: 0; } to { width: var(--target-width); } }
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+.float { animation: float 4s ease-in-out infinite; }
+
+/* Stagger children animation */
+.stagger-children > * { opacity: 0; }
+.stagger-children.animated > *:nth-child(1) { animation: reveal-up 0.6s ease-out 0.0s forwards; }
+.stagger-children.animated > *:nth-child(2) { animation: reveal-up 0.6s ease-out 0.1s forwards; }
+.stagger-children.animated > *:nth-child(3) { animation: reveal-up 0.6s ease-out 0.2s forwards; }
+.stagger-children.animated > *:nth-child(4) { animation: reveal-up 0.6s ease-out 0.3s forwards; }
+.stagger-children.animated > *:nth-child(5) { animation: reveal-up 0.6s ease-out 0.4s forwards; }
+.stagger-children.animated > *:nth-child(6) { animation: reveal-up 0.6s ease-out 0.5s forwards; }
+
+/* Hero text shimmer overlay */
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(13,27,46,0.88) 0%,
+    rgba(13,27,46,0.58) 50%,
+    rgba(13,27,46,0.15) 100%
+  );
+}
