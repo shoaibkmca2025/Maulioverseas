@@ -78,7 +78,7 @@ export default function Courses() {
               <Reveal key={course.id} dir={i === 0 ? 'left' : 'right'} delay={i * 0.12}>
                 <div className={`rounded-3xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 ${course.dark ? 'bg-charcoal text-white' : 'bg-white'}`}>
                   {/* Header */}
-                  <div className={`px-8 pt-8 pb-6 border-b ${course.dark ? 'border-white/10' : 'border-gray-100'}`}>
+                  <div className={`px-5 sm:px-8 pt-6 sm:pt-8 pb-5 sm:pb-6 border-b ${course.dark ? 'border-white/10' : 'border-gray-100'}`}>
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-2 text-[0.65rem] font-bold uppercase tracking-[0.2em] bg-primary text-white px-3 py-1 rounded-full">
                         <Clock size={11} /> {course.duration}
@@ -93,7 +93,7 @@ export default function Courses() {
                   </div>
 
                   {/* Stats */}
-                  <div className={`grid grid-cols-3 gap-4 px-8 py-5 border-b ${course.dark ? 'border-white/10' : 'border-gray-100'}`}>
+                  <div className={`grid grid-cols-3 gap-2 px-5 sm:px-8 py-4 sm:py-5 border-b ${course.dark ? 'border-white/10' : 'border-gray-100'}`}>
                     {[['Students', course.enrolled], ['Placed', course.placed], ['Rating', course.rating]].map(([label, val]) => (
                       <div key={label} className="text-center">
                         <div className={`text-xl font-black ${course.dark ? 'text-white' : 'text-charcoal'}`}>{val}</div>
@@ -103,8 +103,8 @@ export default function Courses() {
                   </div>
 
                   {/* Body */}
-                  <div className="px-8 py-6">
-                    <div className="grid grid-cols-2 gap-2 mb-6">
+                  <div className="px-5 sm:px-8 py-5 sm:py-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                       {course.highlights.map(h => (
                         <div key={h} className="flex items-center gap-2">
                           <CheckCircle size={13} className="text-primary flex-shrink-0" />
@@ -114,7 +114,7 @@ export default function Courses() {
                     </div>
 
                     <div className={`rounded-2xl p-4 mb-6 ${course.dark ? 'bg-white/6' : 'bg-cream'}`}>
-                      <div className="grid grid-cols-3 gap-2 text-center">
+                      <div className="grid grid-cols-3 gap-1 text-center">
                         {[['Course Fee', course.fee], ['Placement', course.placement], ['Salary Range', course.salary]].map(([label, val]) => (
                           <div key={label}>
                             <div className="text-[0.58rem] uppercase tracking-wider font-bold text-primary mb-0.5">{label}</div>

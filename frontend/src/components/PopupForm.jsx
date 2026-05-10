@@ -65,7 +65,8 @@ export default function PopupForm() {
     setErrors({});
     setStatus('loading');
     try {
-      const res = await fetch('http://localhost:5000/api/enquiry', {
+      const API = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+      const res = await fetch(`${API}/api/enquiry`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -102,7 +103,7 @@ export default function PopupForm() {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.88, opacity: 0, y: 48 }}
               transition={{ duration: 0.4, ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl"
+              className="relative w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto"
               style={{ background: 'linear-gradient(145deg, #070e1c 0%, #0d1b2e 100%)' }}
             >
               {/* Close */}
@@ -138,7 +139,7 @@ export default function PopupForm() {
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {FIELDS.map(({ key, label, type, placeholder, required }) => (
                         <InputField key={key} label={label} required={required} error={errors[key]}>
                           <input
@@ -153,7 +154,7 @@ export default function PopupForm() {
                       ))}
                     </div>
 
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div>
                         <label className="block text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-white/60 mb-1.5">Course</label>
                         <select value={form.course} onChange={e => f('course', e.target.value)} className={inputClass(false)}>

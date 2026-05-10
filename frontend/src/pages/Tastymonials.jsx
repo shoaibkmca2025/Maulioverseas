@@ -102,11 +102,11 @@ export default function Tastymonials() {
       <section className="py-0">
         <div className="container-pad">
           <Reveal>
-            <div className="bg-white rounded-3xl shadow-card grid grid-cols-2 md:grid-cols-4 -mt-10 relative z-10 overflow-hidden">
+            <div className="rounded-3xl shadow-card grid grid-cols-2 md:grid-cols-4 -mt-10 relative z-10 overflow-hidden gap-px bg-gray-100">
               {stats.map(({ value, label }, i) => (
-                <div key={label} className={`flex flex-col items-center justify-center py-6 px-4 text-center ${i < 3 ? 'border-r border-gray-100' : ''}`}>
-                  <div className="text-2xl font-black text-charcoal">{value}</div>
-                  <div className="text-xs text-mid-gray uppercase tracking-wider font-semibold">{label}</div>
+                <div key={label} className="flex flex-col items-center justify-center py-5 px-3 text-center bg-white">
+                  <div className="text-xl sm:text-2xl font-black text-charcoal">{value}</div>
+                  <div className="text-[0.65rem] sm:text-xs text-mid-gray uppercase tracking-wider font-semibold">{label}</div>
                 </div>
               ))}
             </div>

@@ -48,7 +48,8 @@ export default function Contact() {
     if (Object.keys(errs).length) { setErrors(errs); return; }
     setStatus('loading');
     try {
-      const res = await fetch('http://localhost:5000/api/enquiry', {
+      const API = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+      const res = await fetch(`${API}/api/enquiry`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -140,7 +141,7 @@ export default function Contact() {
             {/* Form */}
             <div className="lg:col-span-3">
               <Reveal dir="right" delay={0.12}>
-                <div className="bg-white rounded-3xl shadow-card p-8">
+                <div className="bg-white rounded-3xl shadow-card p-5 sm:p-8">
                   <h2 className="heading-md text-charcoal mb-6">Send an <span className="text-gradient-red">Enquiry</span></h2>
 
                   {status === 'success' ? (
@@ -153,7 +154,7 @@ export default function Contact() {
                     </motion.div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-4">
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {FIELDS.map(({ key, label, type, placeholder, required }) => (
                           <div key={key}>
                             <label className="block text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-mid-gray mb-1.5">
@@ -176,7 +177,7 @@ export default function Contact() {
                         ))}
                       </div>
 
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-mid-gray mb-1.5">Course Interest</label>
                           <select value={form.course} onChange={e => f('course', e.target.value)} className={inputClass(false)}>
@@ -229,7 +230,7 @@ export default function Contact() {
             <p className="text-mid-gray mt-2">Mauli College of Hotel Management, Chandgad, Kolhapur</p>
           </Reveal>
           <Reveal>
-            <div className="rounded-3xl overflow-hidden shadow-card" style={{ height: '400px' }}>
+            <div className="rounded-3xl overflow-hidden shadow-card h-56 sm:h-80 lg:h-[400px]">
               <iframe
                 title="Mauli College Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30675.45!2d74.13!3d15.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDU4JzEyLjAiTiA3NMKwMDcnNDguMCJF!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"

@@ -398,7 +398,7 @@ export default function Home() {
       {/* ════════════════════════════════ ABOUT ════════════════════════════════ */}
       <section className="section-pad bg-off-white">
         <div className="container-pad">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <Reveal dir="left">
               <span className="inline-flex items-center gap-2 text-[0.7rem] font-bold uppercase tracking-[0.2em] text-primary mb-4">
                 <span className="w-6 h-0.5 bg-gradient-red" /> About Mauli College
@@ -439,12 +439,12 @@ export default function Home() {
 
             <Reveal dir="right" delay={0.15}>
               <div className="relative">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-3">
                   {[
-                    { src: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500&q=80', alt: 'Training kitchen', cls: 'h-52' },
-                    { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&q=80', alt: 'Hotel training', cls: 'h-52 mt-8' },
-                    { src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&q=80', alt: 'Dubai hotel', cls: 'h-52 -mt-4' },
-                    { src: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=500&q=80', alt: 'Cruise ship', cls: 'h-52' },
+                    { src: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500&q=80', alt: 'Training kitchen', cls: 'h-36 sm:h-52' },
+                    { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&q=80', alt: 'Hotel training', cls: 'h-36 sm:h-52 sm:mt-8' },
+                    { src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&q=80', alt: 'Dubai hotel', cls: 'h-36 sm:h-52 sm:-mt-4' },
+                    { src: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=500&q=80', alt: 'Cruise ship', cls: 'h-36 sm:h-52' },
                   ].map(({ src, alt, cls }) => (
                     <div key={alt} className={`gsap-about-img overflow-hidden rounded-2xl ${cls} group`}>
                       <img src={src} alt={alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -455,7 +455,7 @@ export default function Home() {
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
                   transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-                  className="absolute -bottom-4 -right-4 bg-gradient-red text-white rounded-2xl p-4 shadow-red shadow-xl"
+                  className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-gradient-red text-white rounded-2xl p-3 sm:p-4 shadow-red shadow-xl"
                 >
                   <p className="text-2xl font-black leading-none">100+</p>
                   <p className="text-[0.62rem] font-semibold text-white/80 mt-0.5 leading-tight">Students<br />Placed</p>
@@ -618,7 +618,7 @@ export default function Home() {
       {/* ════════════════════════════════ WHY CHOOSE US ════════════════════════════════ */}
       <section className="section-pad bg-white">
         <div className="container-pad">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <Reveal dir="left">
               <span className="inline-flex items-center gap-2 text-[0.7rem] font-bold uppercase tracking-[0.2em] text-primary mb-4">
                 <span className="w-6 h-0.5 bg-gradient-red" /> Why Choose Us

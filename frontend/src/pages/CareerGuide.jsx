@@ -92,7 +92,7 @@ export default function CareerGuide() {
       {/* Guide Sections */}
       <section className="section-pad">
         <div className="container-pad">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Sidebar nav */}
             <Reveal dir="left">
               <div className="lg:sticky lg:top-28 space-y-2">
@@ -125,7 +125,7 @@ export default function CareerGuide() {
                   const Icon = sec.icon;
                   return (
                     <div className="bg-white rounded-3xl shadow-card overflow-hidden">
-                      <div className={`${sec.color} px-8 py-6 flex items-center gap-4`}>
+                      <div className={`${sec.color} px-5 sm:px-8 py-5 sm:py-6 flex items-center gap-4`}>
                         <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center">
                           <Icon size={22} className="text-white" />
                         </div>
@@ -133,7 +133,7 @@ export default function CareerGuide() {
                       </div>
                       <div className="divide-y divide-gray-100">
                         {sec.content.map((item, j) => (
-                          <div key={j} className="px-8">
+                          <div key={j} className="px-4 sm:px-8">
                             <button onClick={() => setOpenItem(openItem === j ? null : j)}
                               className="w-full flex items-center justify-between py-5 text-left"
                             >

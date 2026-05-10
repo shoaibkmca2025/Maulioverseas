@@ -71,17 +71,17 @@ export default function Course3Month() {
       <section className="py-0">
         <div className="container-pad">
           <Reveal>
-            <div className="bg-white rounded-3xl shadow-card grid grid-cols-2 md:grid-cols-4 -mt-10 relative z-10 overflow-hidden">
+            <div className="rounded-3xl shadow-card grid grid-cols-2 md:grid-cols-4 -mt-10 relative z-10 overflow-hidden gap-px bg-gray-100">
               {[
                 { icon: Clock, label: 'Duration', value: '3 Months' },
                 { icon: Users, label: 'Batch Size', value: '20 Students' },
                 { icon: MapPin, label: 'Placement', value: 'Dubai 5★' },
                 { icon: Award, label: 'Course Fee', value: '₹45,000' },
               ].map(({ icon: Icon, label, value }, i) => (
-                <div key={label} className={`flex flex-col items-center justify-center py-6 px-4 text-center ${i < 3 ? 'border-r border-gray-100' : ''}`}>
-                  <Icon size={20} className="text-primary mb-2" />
-                  <div className="text-xl font-black text-charcoal">{value}</div>
-                  <div className="text-xs text-mid-gray uppercase tracking-wider font-semibold">{label}</div>
+                <div key={label} className="flex flex-col items-center justify-center py-5 px-3 text-center bg-white">
+                  <Icon size={18} className="text-primary mb-2" />
+                  <div className="text-lg sm:text-xl font-black text-charcoal">{value}</div>
+                  <div className="text-[0.65rem] sm:text-xs text-mid-gray uppercase tracking-wider font-semibold">{label}</div>
                 </div>
               ))}
             </div>
@@ -158,7 +158,7 @@ export default function Course3Month() {
                     {openWeek === i ? <ChevronUp size={16} className="text-primary" /> : <ChevronDown size={16} className="text-mid-gray" />}
                   </button>
                   {openWeek === i && (
-                    <div className="px-6 pb-5 grid grid-cols-2 gap-2">
+                    <div className="px-4 sm:px-6 pb-5 grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {item.topics.map(t => (
                         <div key={t} className="flex items-center gap-2">
                           <div className="w-1 h-1 rounded-full bg-primary" />

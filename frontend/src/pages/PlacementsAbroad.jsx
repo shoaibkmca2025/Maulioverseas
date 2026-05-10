@@ -80,7 +80,7 @@ export default function PlacementsAbroad() {
           </Reveal>
           <div className="relative max-w-4xl mx-auto">
             <div className="hidden md:block absolute top-8 left-0 right-0 h-px bg-gray-200" />
-            <StaggerReveal className="grid md:grid-cols-5 gap-6">
+            <StaggerReveal className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
               {steps.map((step) => (
                 <StaggerItem key={step.num}>
                   <div className="text-center relative">
@@ -120,7 +120,7 @@ export default function PlacementsAbroad() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"
+              className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5"
             >
               {filtered.map((p) => (
                 <div key={p.name} className="bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 group">
