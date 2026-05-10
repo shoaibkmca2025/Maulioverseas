@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, CheckCircle, Star, ChevronLeft, ChevronRight, Play, MapPin, Clock, Award, TrendingUp, Shield, Globe } from 'lucide-react';
 import Reveal, { StaggerReveal, StaggerItem } from '../components/Reveal';
 import { openAdmissionForm } from '../components/PopupForm';
@@ -82,10 +82,6 @@ const galleryImgs = [
 export default function Home() {
   const [slideIdx, setSlideIdx] = useState(0);
   const [testimonialIdx, setTestimonialIdx] = useState(0);
-  const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
-  const heroImgY = useTransform(scrollYProgress, [0, 1], ['0%', '28%']);
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
 
   /* Auto-advance hero */
   useEffect(() => {
@@ -109,7 +105,7 @@ export default function Home() {
       gsap.to(placementsBg, {
         yPercent: 15,
         ease: 'none',
-        scrollTrigger: { trigger: '#placements-section', start: 'top bottom', end: 'bottom top', scrub: 0.6 },
+        scrollTrigger: { trigger: '#placements-section', start: 'top bottom', end: 'bottom top', scrub: 1.5 },
       });
     }
 
@@ -119,7 +115,7 @@ export default function Home() {
       gsap.to(ctaBg, {
         yPercent: 14,
         ease: 'none',
-        scrollTrigger: { trigger: '#cta-section', start: 'top bottom', end: 'bottom top', scrub: 0.6 },
+        scrollTrigger: { trigger: '#cta-section', start: 'top bottom', end: 'bottom top', scrub: 1.5 },
       });
     }
 
@@ -194,16 +190,7 @@ export default function Home() {
       );
     });
 
-    // 9. Floating shapes parallax
-    gsap.utils.toArray('.gsap-float').forEach((el, i) => {
-      const dir = i % 2 === 0 ? -1 : 1;
-      const amount = 24 + i * 12;
-      gsap.to(el, {
-        y: amount * dir, x: (amount / 3) * dir, rotate: 12 * dir,
-        ease: 'none',
-        scrollTrigger: { trigger: el.parentElement, start: 'top bottom', end: 'bottom top', scrub: 0.8 },
-      });
-    });
+    // 9. (floating shapes parallax removed — too expensive on low-end devices)
 
     // 10. Stat count-up
     gsap.utils.toArray('.gsap-stat-num').forEach(el => {
@@ -249,23 +236,22 @@ export default function Home() {
     <main className="overflow-x-hidden">
 
       {/* ════════════════════════════════ HERO ════════════════════════════════ */}
-      <section ref={heroRef} className="relative h-screen min-h-[680px] max-h-[980px] overflow-hidden">
+      <section className="relative h-screen min-h-[680px] max-h-[980px] overflow-hidden">
 
-        {/* Slide images with parallax */}
+        {/* Slide images */}
         <AnimatePresence mode="sync">
           <motion.div
             key={slideIdx}
-            initial={{ opacity: 0, scale: 1.05 }}
+            initial={{ opacity: 0, scale: 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.2, ease: 'easeInOut' }}
+            transition={{ duration: 0.9, ease: 'easeInOut' }}
             className="absolute inset-0"
           >
-            <motion.img
-              style={{ y: heroImgY }}
+            <img
               src={slides[slideIdx].img}
               alt=""
-              className="absolute inset-0 w-full h-[115%] object-cover object-center"
+              className="absolute inset-0 w-full h-full object-cover object-center"
               loading="eager"
             />
           </motion.div>
@@ -277,7 +263,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
 
         {/* Hero content — vertically centered with navbar offset */}
-        <motion.div style={{ opacity: heroOpacity }} className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 h-full flex items-center">
           <div className="container-pad w-full" style={{ paddingTop: '72px' }}>
             <AnimatePresence mode="wait">
               <motion.div
@@ -341,7 +327,7 @@ export default function Home() {
               </motion.div>
             </AnimatePresence>
           </div>
-        </motion.div>
+        </div>
 
         {/* Prev / Next arrows */}
         <button onClick={() => goSlide(slideIdx - 1)}

@@ -6,7 +6,12 @@
 
 @layer base {
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; font-size: 16px; }
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
   body {
     font-family: 'Poppins', sans-serif;
     color: #0d1b2e;
@@ -15,9 +20,20 @@
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
   }
+  /* Respect user preference for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    html { scroll-behavior: auto; }
+  }
   #root { min-height: 100vh; }
   img { display: block; max-width: 100%; }
   button, a { cursor: pointer; }
+}
+
+/* Defer rendering of below-fold sections until near viewport */
+.section-offscreen {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
 }
 
 @layer utilities {

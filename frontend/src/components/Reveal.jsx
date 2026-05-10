@@ -38,7 +38,6 @@ export default function Reveal({
       animate={inView ? 'visible' : 'hidden'}
       transition={{ duration, delay, ease: eases[ease] ?? eases.smooth }}
       className={className}
-      style={{ willChange: 'transform, opacity' }}
     >
       {children}
     </motion.div>
