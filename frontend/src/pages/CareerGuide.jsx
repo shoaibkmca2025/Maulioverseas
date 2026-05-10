@@ -6,11 +6,11 @@ import { openAdmissionForm } from '../components/PopupForm';
 const sections = [
   {
     icon: Globe,
-    title: 'Dubai Hospitality Market',
+    title: 'Dubai Hotel Market',
     color: 'bg-blue-500',
     content: [
-      { heading: 'Why Dubai?', body: 'Dubai is the world\'s most visited city (2023) with 14.36 million tourists. It hosts 700+ hotels and is expanding rapidly toward Dubai 2040 — creating thousands of new hospitality jobs every year.' },
-      { heading: 'Salary & Benefits', body: 'Hospitality staff earn AED 1,800–5,000/month with free accommodation, meals, medical insurance, and annual flight tickets. No income tax in the UAE means more take-home pay.' },
+      { heading: 'Why Dubai?', body: 'Dubai is the world\'s most visited city (2023) with 14.36 million tourists. It hosts 700+ hotels and is expanding rapidly toward Dubai 2040 — creating thousands of new hotel industry jobs every year.' },
+      { heading: 'Salary & Benefits', body: 'Hotel staff earn AED 1,800–5,000/month with free accommodation, meals, medical insurance, and annual flight tickets. No income tax in the UAE means more take-home pay.' },
       { heading: 'Growth Trajectory', body: 'Most F&B attendants become supervisors within 18–24 months. With certifications, managers earn AED 6,000–12,000/month. Career growth is fast and merit-based.' },
     ],
   },
@@ -83,7 +83,7 @@ export default function CareerGuide() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
-              Everything you need to know about Dubai hospitality careers — from skills to salary, visa to life abroad.
+              Everything you need to know about Dubai hotel careers — from skills to salary, visa to life abroad.
             </p>
           </Reveal>
         </div>

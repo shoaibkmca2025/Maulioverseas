@@ -127,7 +127,7 @@ export default function Contact() {
                   <h3 className="font-bold text-lg mb-2">Prefer WhatsApp?</h3>
                   <p className="text-white/75 text-sm mb-4">Chat with our admissions team directly — usually responds in minutes.</p>
                   <a
-                    href={`https://wa.me/918793364860?text=${encodeURIComponent("Hello! I'm interested in Mauli College's hospitality courses. Please share more details.")}`}
+                    href={`https://wa.me/918793364860?text=${encodeURIComponent("Hello! I'm interested in Mauli College's hotel management courses. Please share more details.")}`}
                     target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white text-primary font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-off-white transition-colors"
                   >

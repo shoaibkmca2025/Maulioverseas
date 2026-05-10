@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export default function WhatsAppButton() {
-  const msg = encodeURIComponent("Hello! I'm interested in Mauli College's hospitality courses and Dubai placements. Please share more details.");
+  const msg = encodeURIComponent("Hello! I'm interested in Mauli College's hotel management courses and Dubai placements. Please share more details.");
 
   return (
     <motion.a

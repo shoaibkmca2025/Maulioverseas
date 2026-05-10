@@ -5,7 +5,7 @@ import Reveal, { StaggerReveal, StaggerItem } from '../components/Reveal';
 import { openAdmissionForm } from '../components/PopupForm';
 
 const modules = [
-  { num: '01', title: 'Hotel Operations Fundamentals', duration: '3 weeks', topics: ['Hotel Departments Overview', 'Hospitality Standards', 'Organisational Structures', 'Industry Terminology'] },
+  { num: '01', title: 'Hotel Operations Fundamentals', duration: '3 weeks', topics: ['Hotel Departments Overview', 'Hotel Management Standards', 'Organisational Structures', 'Industry Terminology'] },
   { num: '02', title: 'Front Office & Reservations', duration: '4 weeks', topics: ['Check-in / Check-out Procedures', 'PMS Software (Opera)', 'Guest Profile Management', 'Revenue Optimisation Basics'] },
   { num: '03', title: 'Housekeeping Excellence', duration: '3 weeks', topics: ['Room Preparation Standards', 'Linen & Laundry Operations', 'Deep Cleaning Protocols', 'Lost & Found Management'] },
   { num: '04', title: 'F&B Service & Production', duration: '5 weeks', topics: ['Fine Dining Service', 'Banquet & Buffet Setup', 'Basic Culinary Awareness', 'Kitchen Coordination'] },
@@ -54,7 +54,7 @@ export default function Course6Month() {
             </Reveal>
             <Reveal delay={0.16}>
               <p className="text-white/60 text-lg mb-8 max-w-xl leading-relaxed">
-                6 months of deep, multi-department training covering Dubai hotels AND cruise ships. The most comprehensive hospitality programme in Kolhapur district.
+                6 months of deep, multi-department training covering Dubai hotels AND cruise ships. The most comprehensive hotel management programme in Kolhapur district.
               </p>
             </Reveal>
             <Reveal delay={0.24}>

@@ -46,7 +46,7 @@ export default function Footer() {
                 </div>
               </Link>
               <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
-                Premier hospitality training institution with guaranteed international placements in Dubai 5-star hotels and cruise ships since 2010.
+                Premier hotel management training institution with guaranteed international placements in Dubai 5-star hotels and cruise ships since 2010.
               </p>
               <div className="flex gap-2 mb-6">
                 {[

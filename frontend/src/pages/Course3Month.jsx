@@ -46,7 +46,7 @@ export default function Course3Month() {
             </Reveal>
             <Reveal delay={0.16}>
               <p className="text-white/60 text-lg mb-8 max-w-xl leading-relaxed">
-                90 days of intensive, industry-focused training that takes you from zero to job-ready for Dubai's luxury hospitality sector.
+                90 days of intensive, industry-focused training that takes you from zero to job-ready for Dubai's luxury hotel industry.
               </p>
             </Reveal>
             <Reveal delay={0.24}>

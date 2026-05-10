@@ -10,7 +10,7 @@ const courses = [
     title: 'Fast-Track Hotel Management Programme',
     subtitle: 'Food & Beverage Service',
     badge: 'Fast Track',
-    description: 'Intensive training designed for quick entry into Dubai\'s luxury hospitality sector. Master food & beverage service, guest relations, and hotel operations in 90 days.',
+    description: 'Intensive training designed for quick entry into Dubai\'s luxury hotel industry. Master food & beverage service, guest relations, and hotel operations in 90 days.',
     fee: '₹45,000',
     placement: 'Dubai 5-Star Hotels',
     salary: 'AED 1,800–2,500/mo',
@@ -40,7 +40,7 @@ const whyUs = [
   { icon: Globe, label: 'International Placements', desc: 'Guaranteed Dubai & cruise ship job offers' },
   { icon: Award, label: 'Certified Training', desc: 'Industry-recognised certifications' },
   { icon: Users, label: 'Expert Faculty', desc: '15+ years average industry experience' },
-  { icon: TrendingUp, label: 'Career Growth', desc: 'Fast-track promotions in luxury hospitality' },
+  { icon: TrendingUp, label: 'Career Growth', desc: 'Fast-track promotions in luxury hotels' },
 ];
 
 export default function Courses() {

@@ -21,7 +21,7 @@ const slides = [
     eyebrow: 'International Career Training',
     h1a: 'Learn. Excel.',
     h1b: 'Work Abroad.',
-    sub: 'Professional hospitality training in Hindi, Marathi & English — no experience needed.',
+    sub: 'Professional hotel management training in Hindi, Marathi & English — no experience needed.',
   },
   {
     img: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=85&auto=format',
@@ -391,10 +391,10 @@ export default function Home() {
               </span>
               <h2 className="heading-lg text-charcoal mb-6">
                 Chandgad's Gateway to<br />
-                <span className="text-gradient-red">International Hospitality</span>
+                <span className="text-gradient-red">International Hotel Management</span>
               </h2>
               <p className="text-mid-gray leading-[1.8] mb-6 text-[0.95rem]">
-                Mauli College of Hotel Management, based in Chandgad, Maharashtra, is a premier hospitality training institution offering specialized short-duration courses with <strong className="text-charcoal font-semibold">guaranteed international job placements</strong>. We bridge the gap between aspiration and achievement.
+                Mauli College of Hotel Management, based in Chandgad, Maharashtra, is a premier hotel management training institution offering specialized short-duration courses with <strong className="text-charcoal font-semibold">guaranteed international job placements</strong>. We bridge the gap between aspiration and achievement.
               </p>
               <div className="space-y-3 mb-8">
                 {[
@@ -564,7 +564,7 @@ export default function Home() {
               <span className="w-6 h-0.5 bg-gradient-red" /> International Placements <span className="w-6 h-0.5 bg-gradient-red" />
             </span>
             <h2 className="heading-lg text-white">Your Career Passport<br /><span className="text-gradient-red">to the World</span></h2>
-            <p className="text-white/60 text-base mt-4 max-w-xl mx-auto">Placed in the world's most prestigious hospitality establishments</p>
+            <p className="text-white/60 text-base mt-4 max-w-xl mx-auto">Placed in the world's most prestigious hotels and cruise lines</p>
           </Reveal>
 
           <StaggerReveal className="grid md:grid-cols-3 gap-5" stagger={0.1}>
@@ -615,7 +615,7 @@ export default function Home() {
                   { icon: Shield, title: 'Guaranteed Placement', desc: 'We don\'t just train you — we place you. 98%+ students get international jobs after completing our courses.' },
                   { icon: Globe, title: 'Global Network', desc: 'Direct tie-ups with 5-star hotels in Dubai, cruise lines, and GCC properties. Your employer is waiting.' },
                   { icon: TrendingUp, title: 'Fast Career Growth', desc: 'Our graduates become supervisors within 2 years. General Managers within a decade. Clear trajectory.' },
-                  { icon: Award, title: 'Recognized Certifications', desc: 'MCHM certificates are recognized by international hospitality employers. HACCP certification included.' },
+                  { icon: Award, title: 'Recognized Certifications', desc: 'MCHM certificates are recognized by international hotel employers. HACCP certification included.' },
                 ].map(({ icon: Icon, title, desc }, i) => (
                   <div key={title} className="gsap-why-item flex gap-5 group">
                       <div className="w-12 h-12 bg-primary/8 group-hover:bg-primary rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-300">

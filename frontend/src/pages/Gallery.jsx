@@ -9,7 +9,7 @@ const photos = [
   { id: 1, tab: 'Campus', src: 'https://images.unsplash.com/photo-1562516155-e0c1ee44059b?w=800&q=80', label: 'Training Kitchen' },
   { id: 2, tab: 'Training', src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', label: 'Restaurant Service Practice' },
   { id: 3, tab: 'Placements', src: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=80', label: 'Dubai Batch 2024' },
-  { id: 4, tab: 'Campus', src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', label: 'Hospitality Lab' },
+  { id: 4, tab: 'Campus', src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', label: 'Hotel Management Lab' },
   { id: 5, tab: 'Training', src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80', label: 'Bar & Mixology Class' },
   { id: 6, tab: 'Placements', src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80', label: 'Atlantis, The Palm Batch' },
   { id: 7, tab: 'Events', src: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800&q=80', label: 'Annual Convocation 2024' },

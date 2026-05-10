@@ -92,7 +92,7 @@ export default function Tastymonials() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
-              Hear from 300+ students who transformed their lives through Mauli College's hospitality programmes.
+              Hear from 300+ students who transformed their lives through Mauli College's hotel management programmes.
             </p>
           </Reveal>
         </div>
@@ -198,7 +198,7 @@ export default function Tastymonials() {
         <div className="container-pad text-center">
           <Reveal>
             <h2 className="heading-lg text-white mb-4">Write Your Own <span className="text-gradient-red">Success Story</span></h2>
-            <p className="text-white/55 mb-8 max-w-md mx-auto">Join the next batch of Mauli alumni who changed their lives through international hospitality careers.</p>
+            <p className="text-white/55 mb-8 max-w-md mx-auto">Join the next batch of Mauli alumni who changed their lives through international hotel careers.</p>
             <button onClick={openAdmissionForm}
               className="bg-gradient-red text-white font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-widest hover:shadow-red hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >
