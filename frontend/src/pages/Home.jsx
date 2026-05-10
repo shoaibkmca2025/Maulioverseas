@@ -570,7 +570,7 @@ export default function Home() {
           className="gsap-placements-bg absolute inset-0 w-full h-[120%] -top-[10%] object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-charcoal/92 via-charcoal/80 to-primary-dark/60" />
+        <div className="absolute inset-0 bg-charcoal/88" />
 
         <div className="relative container-pad">
           <Reveal dir="up" className="text-center mb-14">
@@ -588,12 +588,12 @@ export default function Home() {
               { icon: '🌍', title: 'GCC Countries', items: ['Saudi Arabia · Qatar · Kuwait', 'Luxury Hotels & Resorts', 'Full Placement Support', 'Pre-departure Orientation'] },
             ].map(({ icon, title, items }) => (
               <StaggerItem key={title} dir="up">
-                <div className="gsap-placement-card glass rounded-3xl p-7 h-full hover:bg-white/12 transition-all duration-400 group">
+                <div className="gsap-placement-card rounded-3xl p-7 h-full transition-all duration-300 group border border-white/15 hover:border-primary/50 hover:-translate-y-1" style={{ background: 'rgba(13,27,46,0.75)', backdropFilter: 'blur(16px)' }}>
                   <span className="text-4xl block mb-5 group-hover:scale-110 transition-transform duration-300">{icon}</span>
                   <h3 className="text-white font-bold text-lg mb-4">{title}</h3>
                   <ul className="space-y-2.5">
                     {items.map(it => (
-                      <li key={it} className="flex items-center gap-2.5 text-white/60 text-sm">
+                      <li key={it} className="flex items-center gap-2.5 text-white/80 text-sm">
                         <span className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
                         {it}
                       </li>
